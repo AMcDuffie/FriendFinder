@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder | Survey</title>
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/friendfinder.css">
+</head>
+
+
+<body>
+
+    <div class="container">
+    <!-- Quiz Page Title -->
+      <div class="page-header">
+            <h1 style="font-size: 45px;"><i class="fas fa-users" style="color: #f61008"></i> Friend Finder Quiz <i class="fas fa-users" style="color: #f61008"></i></h1>
+      </div>
+
+          <div class="card" style="border: none;">
+              <div class="card-header" style="background-color: #07e2d7; color: #fff;">
+                <h4>About You</h4>
+              </div>
+              <div class="card-body">
+                    <h5>Your Full Name</h5>
+                    <div>
+                      <input id ="formName" class="form-control" type="text" name="name" placeholder="John Smith">
+                      <span>(Required)</span>
+                    </div>  
+                    <br>
+                    <h5>Link to a Photo Image</h5>
+                    <div>
+                      <input id ="formImage" class="form-control" type="text" name="name" placeholder="http://photolinkhere.com.jpg/">
+                      <span>(Required)</span>
+                    </div>
+              </div>
+          </div>
+        <form>
+          <div class="card">
+            <div class="card-header" style="background-color: #07e2d7; color: #fff;">
+              <h4>Questionnaire</h4>
+            </div>
+          <div class="card-body">
+              <h5><strong>Question 1</strong></h5>
+              <h6>You are the first to take charge in social gatherings or group projects.</h6>
+              <select data-placeholder="" class="chosen-select" id="Q1">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>  
+                    <br><br>
+              <h5><strong>Question 2</strong></h5>
+              <h6>You're the happiest person in a room.</h6>
+              <select data-placeholder="" class="chosen-select" id="Q2">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+                    <br><br>
+              <h5><strong>Question 3</strong></h5>
+              <h6>Your mind is always buzzing with unexplored ideas and plans.</h6>
+              <select data-placeholder="" class="chosen-select" id="Q3">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+                    <br><br>
+              <h5><strong>Question 4</strong></h5>
+              <h6>You always see the glass and haft empty.</h6>
+              <select data-placeholder="" class="chosen-select" id="Q4">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select> 
+                    <br><br>
+              <h5><strong>Question 5</strong></h5>
+              <h6>You rarely do something just out of sheer curiosity.</h6>
+              <select data-placeholder="" class="chosen-select" id="Q5">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+                    <br><br>
+              <h5><strong>Question 6</strong></h5>
+              <h6>Anything can quickly upset you.</h6>
+              <select data-placeholder="" class="chosen-select" id="Q6">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+                    <br><br>
+              <h5><strong>Question 7</strong></h5>
+              <h6>You love finding new adventures.</h6>
+              <select data-placeholder="" class="chosen-select" id="Q7">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select> 
+                    <br><br>
+              <h5><strong>Question 8</strong></h5>
+              <h6>Getting up every Monday makes you feel sick to your stomach.</h6>
+              <select data-placeholder="" class="chosen-select" id="Q8">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+                    <br><br>
+              <h5><strong>Question 9</strong></h5>
+              <h6>You are very polite and say "Hi!" to everyone you pass.</h6>
+              <select data-placeholder="" class="chosen-select" id="Q9">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+                    <br><br>
+              <h5><strong>Question 10</strong></h5>
+              <h6>You are happy to be finished with this questionnaire.</h6>
+              <select data-placeholder="" class="chosen-select" id="Q10">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>              
+          </div> 
+            <button type="submit" name="action" id="submitButton" class="btn btn-info submit"><i class="far fa-check-square"></i> Submit Survey</button>
+        </form>
+    </div>
+
+<br>
+    <!-- Footer -->
+    <footer class="footer">
+      <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/AMcDuffie/Friend-Finder" target="_blank">GitHub Repo</a> | <a href="/">Home</a></p>
+    </footer>
+
+  <!-- Modal Dialog Displaying Closest Friend Match -->
+	<div id="modal1" class="modal" style="background-color: #ffffff !important; width: 50%; height: 75%; position: absolute; left: 25%; top: 115%;">
+    <div class="modal-content" style="text-align: center;">
+			<h4>Friend Match</h4>
+			<div class="divider"></div>
+			<h5 id="userMatch" style="color: rgb(14, 94, 94); font-size: 18pt;"></h5>
+			<img id="userMatchImage" class="materialboxed" width="75%" src="" style="position: relative; left: 10%;">
+		</div>
+		<div class="modal-footer">
+			<a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Try Again!</a>
+		</div>
+  </div>
+
+  
+<script type="text/javascript">
+
+//Adding JQuery for collecting the user data
+$('#submitButton').on('click', function(event) {
+  event.preventDefault();
+
+// $( "form" ).submit(function(event) {
+  var userData = {
+          name: $("#formName").val(),
+          photo: $("#formImage").val(),
+          scores: [
+            $("#Q1").val(),
+            $("#Q2").val(),
+            $("#Q3").val(),
+            $("#Q4").val(),
+            $("#Q5").val(),
+            $("#Q6").val(),
+            $("#Q7").val(),
+            $("#Q8").val(),
+            $("#Q9").val(),
+            $("#Q10").val()
+          ]
+        };
+
+        
+
+  // Add user inputs to friends list
+  $.post('/api/friends', userData, function(data) {
+           
+      			// Set the name and image values of friend match
+      			$('#userMatch').html(data.matchName);
+            $("#userMatchImage").attr("src", data.matchImage);
+            
+		    	  // Open the modal dialog
+            $('#modal1').modal();
+      		})
+      		
+});
+
+</script>
+
+</body>
+</html>

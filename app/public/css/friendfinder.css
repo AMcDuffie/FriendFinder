@@ -1,0 +1,33 @@
+#modal1 {
+background-color: blue;
+}
+
+#userMatch {
+    color: rgb(14, 94, 94); font-size: 18pt;
+}
+
+#userMatchImage {
+    background-color: blueviolet
+}
+
+.modal {
+background-color: blue !important;
+}
+
+.modal-content {
+    background-color: brown;
+}
+
+.divider {
+    background-color: cadetblue
+}
+
+.materialboxed {
+    background-color: crimson;
+}
+
+.modal-footer {
+    background-color: gray;
+}
+
+

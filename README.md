@@ -29,8 +29,8 @@ Heroku
 
 ```js
 {
-	name: "Charlie",
-	photo: "https://vignette3.wikia.nocookie.net/itsalwayssunny/images/0/0a/Charlie_%289%29.jpg",
-	scores: [5, 1, 2, 3, 1, 2, 5, 1, 1, 1]
+    name: "Rab Bit It",
+    photo: "https://images.freeimages.com/images/large-previews/815/xmas-bunny-1313404.jpg",
+    scores: [5, 1 ,4, 4, 5, 1, 2, 5, 4, 1]
 }
 ```
